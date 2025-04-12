@@ -6,21 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in); /*Defino clase para capturar valores por teclado*/
-        String nombreEmpleado = "";
-        String documentoEmpleado = "";
-        double salarioBruto = 0;
-        double salarioNeto = 0;
-        double valorHora = 0;
-        double cantidadHoras = 0;
-        double deduccionSalud = 0;
-        double deduccionPension = 0;
-        double horasExtras = 0;
-        double valorHorasExtras = 0;
-        double bonificacion = 0;
-        double fondoSolidaridadPensionl = 0;
-        double valorRetencionFuente = 0;
-        double auxilioTransporte = 0;
-        double salarioMinimo = 0;
+        String nombreEmpleado, documentoEmpleado = "";
+        double salarioBruto, salarioNeto, valorHora, cantidadHoras, deduccionSalud, deduccionPension, horasExtras, valorHorasExtras = 0;
+        double bonificacion, fondoSolidaridadPensionl, valorRetencionFuente, auxilioTransporte, salarioMinimo = 0;
 
         System.out.print("Ingrese el nombre del empleado: ");
                 nombreEmpleado = sc.nextLine();
@@ -52,7 +40,7 @@ public class Main {
                 horasExtras = cantidadHoras - 96;
                 valorHorasExtras = (valorHora*0.25) * horasExtras;
             }
-            System.out.println("Detalle de pago " + nombreEmpleado);
+            System.out.println("Detalle del pago de" + nombreEmpleado);
             System.out.println("La deducción por salud es: " + deduccionSalud);
             System.out.println("La deducción por pensión es: " + deduccionPension);
             System.out.println("El auxilio de transporte es: " + auxilioTransporte);
