@@ -45,6 +45,7 @@ public class Main {
             System.out.println("La deducción por pensión es: " + deduccionPension);
             System.out.println("El auxilio de transporte es: " + auxilioTransporte);
             System.out.println("La bonificación es: " + bonificacion);
+
             System.out.println("El pago por horas extras es: " + valorHorasExtras);
             System.out.println("El salario neto es: " + (salarioBruto - deduccionPension - deduccionSalud +auxilioTransporte +bonificacion + valorHorasExtras));
         }
